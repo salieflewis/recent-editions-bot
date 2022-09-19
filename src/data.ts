@@ -6,9 +6,12 @@ import {
 } from '@apollo/client';
 import fetch from 'cross-fetch';
 
+// https://api.thegraph.com/subgraphs/name/iainnash/erc721drop-goerli
+// https://api.thegraph.com/subgraphs/name/iainnash/zora-editions-mainnet
+
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/iainnash/zora-editions-mainnet',
+    uri: 'https://api.thegraph.com/subgraphs/name/iainnash/erc721drop-goerli',
     fetch,
   }),
   cache: new InMemoryCache(),
