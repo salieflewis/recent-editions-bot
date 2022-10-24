@@ -24,7 +24,7 @@ const createTweet = async (address: string, creator: string, size: number) => {
         address +
         CREATOR_STRING +
         ((await provider.lookupAddress(creator)) != null
-          ? provider.lookupAddress(creator)
+          ? await provider.lookupAddress(creator)
           : creator) +
         SIZE_STRING +
         (size == 18446744073709551615 ? 'OPEN EDITION' : size)
