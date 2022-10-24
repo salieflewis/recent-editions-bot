@@ -1,4 +1,3 @@
-// import * as admin from 'firebase-admin';
 import { initializeApp } from 'firebase-admin/app';
 
 // Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
@@ -8,7 +7,6 @@ import * as functions from 'firebase-functions';
 import createTweet from './tweet.js';
 
 initializeApp();
-// admin.initializeApp();
 
 // Listens for new documents added to /moralis/events/Goerlinftcreator/:creatorEvents
 export const onNewDocument = functions.firestore
