@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "recent-editions-bot"
+  },
+  "targets": {},
+  "etags": {
+    "recent-editions-bot": {
+      "extensionInstances": {
+        "moralis-streams": "cbbdbda9606f912cb3f7670bede46c5db76d9ffb6fa33df5a14d1d7ea6aa782a"
+      }
+    }
+  }
+}
