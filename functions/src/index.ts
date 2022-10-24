@@ -14,6 +14,7 @@ export const onNewDocument = functions.firestore
   .onCreate((snap: any, context: any) => {
     const values = snap.data();
     const address = values.editionContractAddress;
+    const creator = values.creator;
     const size = values.editionSize;
-    createTweet(address, size);
+    createTweet(address, creator, size);
   });
