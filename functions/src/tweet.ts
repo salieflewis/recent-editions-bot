@@ -12,7 +12,7 @@ const userClient = new TwitterApi({
 const v2Client = userClient.v2;
 
 const MINTER_STRING = 'Latest mint: https://create.zora.co/editions/';
-const CREATOR_STRING = 'Created by: ';
+const CREATOR_STRING = '\nCreated by: ';
 const SIZE_STRING = '\nEdition size: ';
 
 const provider = ethers.getDefaultProvider();
